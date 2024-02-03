@@ -1,0 +1,222 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Trendbazar",
+    "dateExported": "2024-01-12T04:13:48.310Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "4168662c-adfb-4f12-a525-0c9b9a054170",
+            "colId": "0556f043-095f-4352-9982-e6286a1acfde",
+            "containerId": "",
+            "name": "signup",
+            "url": "http://127.0.0.1:8000/api/register/",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-01-09T04:11:53.120Z",
+            "modified": "2024-01-12T04:05:22.686Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "customer2"
+                    },
+                    {
+                        "name": "email",
+                        "value": "custome2r@gmail.com"
+                    },
+                    {
+                        "name": "password",
+                        "value": "customer2"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "2a994abc-5a89-4870-a414-cb5d99b1c230",
+            "colId": "0556f043-095f-4352-9982-e6286a1acfde",
+            "containerId": "",
+            "name": "get token",
+            "url": "http://127.0.0.1:8000/api/token/",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-01-09T04:34:12.683Z",
+            "modified": "2024-01-09T04:35:36.618Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "customer"
+                    },
+                    {
+                        "name": "password",
+                        "value": "customer"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "74c6bfef-9bcf-48b7-95ad-a8b6d52a6c49",
+            "colId": "0556f043-095f-4352-9982-e6286a1acfde",
+            "containerId": "",
+            "name": "list products",
+            "url": "http://127.0.0.1:8000/api/products/",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-01-10T03:09:31.395Z",
+            "modified": "2024-01-10T03:11:38.362Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Token  f8c5483a65680eaae40764d928e3c1987ce3dc09"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "acb887d6-94e5-4301-9237-f8a85369b48c",
+            "colId": "0556f043-095f-4352-9982-e6286a1acfde",
+            "containerId": "",
+            "name": "product detail",
+            "url": "http://127.0.0.1:8000/api/products/3/",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2024-01-10T03:22:25.907Z",
+            "modified": "2024-01-10T03:24:09.227Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Token  f8c5483a65680eaae40764d928e3c1987ce3dc09"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "1fd9b0c5-d6a5-4e86-8161-e1d57026d3d8",
+            "colId": "0556f043-095f-4352-9982-e6286a1acfde",
+            "containerId": "",
+            "name": "Add to cart",
+            "url": "http://127.0.0.1:8000/api/products/3/add_to_basket/",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-01-10T04:04:09.165Z",
+            "modified": "2024-01-11T03:47:51.526Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Token  f8c5483a65680eaae40764d928e3c1987ce3dc09"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "qty",
+                        "value": "2"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "de4ff8b6-81cc-4883-8ba0-184a5909ac53",
+            "colId": "0556f043-095f-4352-9982-e6286a1acfde",
+            "containerId": "",
+            "name": "list cart items",
+            "url": "http://127.0.0.1:8000/api/baskets/",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2024-01-10T05:01:27.144Z",
+            "modified": "2024-01-10T05:02:29.607Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Token  f8c5483a65680eaae40764d928e3c1987ce3dc09"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "4b9bf048-05d9-4200-9650-847752d19bfc",
+            "colId": "0556f043-095f-4352-9982-e6286a1acfde",
+            "containerId": "",
+            "name": "basket item detail",
+            "url": "http://127.0.0.1:8000/api/baskets/item/3/",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2024-01-11T04:17:02.310Z",
+            "modified": "2024-01-11T04:19:07.198Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Token  f8c5483a65680eaae40764d928e3c1987ce3dc09"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "b1122259-08ea-47bf-9e1a-770603ee916e",
+            "colId": "0556f043-095f-4352-9982-e6286a1acfde",
+            "containerId": "",
+            "name": "update basket item",
+            "url": "http://127.0.0.1:8000/api/baskets/item/2/",
+            "method": "PUT",
+            "sortNum": 90000,
+            "created": "2024-01-11T04:23:50.889Z",
+            "modified": "2024-01-11T04:26:21.698Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Token  f8c5483a65680eaae40764d928e3c1987ce3dc09"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "qty",
+                        "value": "3"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "895374ab-d0cc-4ff3-988f-f6fcaa4f084d",
+            "colId": "0556f043-095f-4352-9982-e6286a1acfde",
+            "containerId": "",
+            "name": "delete basket item",
+            "url": "http://127.0.0.1:8000/api/baskets/item/2/",
+            "method": "DELETE",
+            "sortNum": 100000,
+            "created": "2024-01-11T04:27:47.896Z",
+            "modified": "2024-01-11T04:30:29.350Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Token  f8c5483a65680eaae40764d928e3c1987ce3dc09"
+                }
+            ],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
